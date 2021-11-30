@@ -64,5 +64,3 @@ fun getNumberOfRainBow(color: Color) = when (color) {
 ~~~
 
 <br></br>
-
-# 공부 끝~ 🏃🏻‍♀️

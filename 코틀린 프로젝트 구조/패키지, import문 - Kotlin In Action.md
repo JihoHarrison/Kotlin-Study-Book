@@ -56,5 +56,3 @@ fun main() {
     println(createRandomRectangle().isSquare)
 }
 ~~~
-
-<br></br>

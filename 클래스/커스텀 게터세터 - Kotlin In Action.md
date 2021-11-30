@@ -22,5 +22,3 @@ class Rectangle(val height: Int, val width: Int) {
   - `get() = height == width` 라고 작성해도 된다. (굳이 중괄호로 블록문 만들지 않아도 된다.)
 
 <br></br>
-
-# 공부 끝~ 🏃🏻‍♀️

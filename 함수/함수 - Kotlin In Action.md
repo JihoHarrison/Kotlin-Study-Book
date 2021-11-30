@@ -70,5 +70,3 @@ class MainActivity {
 ~~~
 
 <br></br>
-
-# 공부 끝~ 🏃🏻‍♀️

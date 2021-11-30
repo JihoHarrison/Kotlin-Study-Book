@@ -96,5 +96,3 @@ fun getOrder(color: Color): Int =
 ~~~
 
 <br></br>
-
-# 공부 끝~ 🏃🏻‍♀️

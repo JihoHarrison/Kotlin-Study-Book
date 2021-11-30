@@ -99,5 +99,3 @@ person.isMarried = true // setter 호출
 ~~~
 
 <br></br>
-
-# 공부 끝~ 🏃🏻‍♀️

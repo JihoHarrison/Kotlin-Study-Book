@@ -37,6 +37,4 @@ fun mix(color1: Color, color2: Color) =
   - `setOf()` 는 코틀린 표준 라이브러리에서 제공하는 함수이고, 자료 구조 Set 객체를 만들어 반환하는 함수다.
   - 분기 조건 부분이 상수가 아니라 객체이다.
   - `Set(집합) 자료구조` = 원소들이 모여있는 구조이고, 모여있기만 하지, 각 원소의 순서는 중요하지 않다.
-  - `setOf(RED, YELLOW) 분기 조건` = color1, color2가 순서 상관 없이 한 개가 RED이고 나머지 한 개가 YELLOW라는 것
-
-# 공부 끝~ 🏃🏻‍♀️
+  - `setOf(RED, YELLOW) 분기 조건` = color1, color2가 순서 상관 없이 한 개가 RED이고 나머지 한 개가 YELLOW라는 것 ️
