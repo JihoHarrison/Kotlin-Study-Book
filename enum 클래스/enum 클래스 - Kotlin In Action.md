@@ -54,7 +54,7 @@ fun main() {
   - 제어문과 함께 사용하는 예시 외에도 다양한 예시가 있을 수 있다.
 - 무지개 색상(빨주노초파남보) 중 특정 색상이 몇 번째 색상인지 알려주는 함수를 작성해야 한다고 가정.
 ~~~kotlin
-import com.chohee.example.Color // Color enum 클래스가 다른 패키지에 있을 경우 import 된다.(패키지는 예시임)
+import com.jihoKevin.example.Color // Color enum 클래스가 다른 패키지에 있을 경우 import 된다.(패키지는 예시임)
 
 ...
 
@@ -79,7 +79,7 @@ fun main() {
 - `Color.RED` 처럼 `enum class.상수` 라고 작성해야 하는게 길고 불편하다면,
 - `import` 시 enum 상수를 모두 import 하면 된다.
 ~~~kotlin
-import com.chohee.example.Color.* // *을 붙여 enum 상수를 한 꺼번에 보두 import 한다.
+import com.jihoKevin.example.Color.* // *을 붙여 enum 상수를 한 꺼번에 보두 import 한다.
 
 ...
 

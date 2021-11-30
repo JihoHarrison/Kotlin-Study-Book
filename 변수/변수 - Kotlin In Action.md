@@ -11,15 +11,15 @@
 - 변수 타입을 생략해도 된다.
 - = 컴파일러가 `초기화 식`의 타입을 분석해서 변수의 타입으로 추론하기 때문이다.
 ~~~kotlin
-val name: String = "kimchohee" // 타입 명시
+val name: String = "jihoKevin" // 타입 명시
 
 // 또는 
 
-val name = "kimchohee" // 타입 생략
+val name = "jihoKevin" // 타입 생략
 ~~~
 - 위 코드 설명
-  - 초기화 식은 "kimchohee" 부분이다.
-  - "kimchohee"의 타입이 `String`이므로 변수 name의 타입도 String이라 추론한다.
+  - 초기화 식은 "jihoKevin" 부분이다.
+  - "jihoKevin"의 타입이 `String`이므로 변수 name의 타입도 String이라 추론한다.
 
 <br></br>
 
@@ -34,7 +34,7 @@ val name: String // 반드시 타입 명시
 
 ...
 
-name = "kimchohee"
+name = "jihoKevin"
 ~~~
 
 <br></br>
@@ -90,7 +90,7 @@ languages.add("Java") // 가능, 불변 참조 변수가 가리키는 객체 내
 - `var` 키워드로 선언된 변수의 값은 바뀔 수 있다.
 - var 키워드로 선언된 변수는 이후에도 값을 변경할 수 있지만, 변수의 타입이 달라지는 값으로는 변경할 수 없다.
 ~~~kotlin
-var name: String = "kimchohee" // 변수의 타입이 String 타입이다.
+var name: String = "jihoKevin" // 변수의 타입이 String 타입이다.
 
 ...
 
