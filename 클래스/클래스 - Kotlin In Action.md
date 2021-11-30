@@ -90,9 +90,9 @@ class Person {
 - getter 호출은 필드 이름을 그대로 사용해도 된다.
 - setter 호출은 필드에 데이터를 대입하는 식으로 대신할 수 있다.
 ~~~kotlin
-val person = Person("kimchohee", false) // 생성자 호출, new 사용 안 함
+val person = Person("jihoKevin", false) // 생성자 호출, new 사용 안 함
 
-println(person.name) // getter 호출, kimchohee 출력
+println(person.name) // getter 호출, jihoKevin 출력
 println(person.isMarried) // getter 호출, false 출력
 
 person.isMarried = true // setter 호출

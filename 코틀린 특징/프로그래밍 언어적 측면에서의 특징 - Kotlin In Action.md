@@ -11,9 +11,9 @@
 - 정해진 타입에 맞춰서 값을 정해야 한다.
 ~~~kotlin
 // kotlin
-val name: String = "kimchohee"
+val name: String = "jihoKevin"
 
-name = "choheeis" // 컴파일 성공
+name = "jihoKevin" // 컴파일 성공
 ~~~
 - 위 코드 설명
   - `name` 변수의 타입은 `String` 이므로 name에는 문자열만 저장할 수 있다.
@@ -22,7 +22,7 @@ name = "choheeis" // 컴파일 성공
   - 대표적인 동적 타입 지정 언어 = 자바스크립트
 ~~~javascript
 // javascript
-let name = "kimchohee"
+let name = "jihoKevin"
 
 name = 24 // 컴파일 성공
 ~~~
