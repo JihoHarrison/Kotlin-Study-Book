@@ -78,21 +78,22 @@ class MainActivity {
     ~~~kotlin
     people.maxBy() { p -> p.age }
     ~~~
+    <br></br>
     * 람다가 어떤 함수의 유일한 인자인 경우 함수 호출 괄호를 없애도 된다.
     ~~~kotlin
     people.maxBy { p -> p.age }
     ~~~
+    <br></br>
     * 람다의 파라미터가 하나뿐이고 그 타입을 컴파일러가 추론할 수 있는 경우 it을 바로 사용 할 수 있다.
     ~~~kotlin
     people.maxBy { it.age }
     ~~~
-    
- - 람다의 Closure
-    * 코틀린의 람다는 자바의 closure 개념과 다르다. 자바에서는 람다가 함수 내부에서 실행될 때, 로컬 변수에 접근하기 위해서는 해당 변수의 값이 final로 불변을 만족해야 한다.
-      이는 Stack 영역에 로컬 변수의 메모리가 잡히고, 함수의 소멸과 함께 stack에서 pop(소멸)되기 때문이다.
-      final인 경우 해당 변수 값을 그대로 복사해서 람다 내부에서 사용하며, 이를 `Lamda Captureing`이라고 한다.
-    * 코틀린에서는 final이 아닌 로컬 변수에 접근하기 위해서 자바와는 다른 방식이 적용된다. 만약 final인 경우는 그대로 값을 복사하여 사용하지만 final이 아닌 변수의 경우, 코틀린에서 제공하는 Wrapper 클래스
-      에 감싸지고, 이를 참조하여 접근하는 형식이다. 람다가 종료되어도 항상 변수의 참조 값을 람다 코드와 함께 저장한다.
+    <br></br>
+ - 람다의 `Closure`
+    * 코틀린의 람다는 자바의 `closure` 개념과 다르다. 자바에서는 람다가 함수 내부에서 실행될 때, 로컬 변수에 접근하기 위해서는 해당 변수의 값이 final로 불변을 만족해야 한다.
+      이는 `Stack` 영역에 로컬 변수의 메모리가 잡히고, 함수의 `소멸`과 함께 `stack`에서 pop(소멸)되기 때문이다.
+      `final`인 경우 해당 변수 값을 그대로 복사해서 람다 내부에서 사용하며, 이를 `Lamda Captureing`이라고 한다.
+    * 코틀린에서는 `final`이 아닌 로컬 변수에 접근하기 위해서 자바와는 다른 방식이 적용된다. 만약 `final`인 경우는 그대로 값을 복사하여 사용하지만 `final`이 아닌 변수의 경우, 코틀린에서 제공하는             Wrapper 클래스에 감싸지고, 이를 참조하여 접근하는 형식이다. 람다가 종료되어도 항상 변수의 참조 값을 람다 코드와 함께 저장한다.
     ~~~kotlin
     fun lambdaSample() { 
         var counter = 0 
@@ -100,8 +101,9 @@ class MainActivity {
         run {println(Inc)} 
     }
     ~~~
+    <br></br>
     
-    * 위 코드는 counter의 값을 inc라는 상수에 넣어 접근라고 있으므로 정상적으로 동작한다. 아래 코드와 같이 Class로 Wrapping되어 동작하기 때문이다.
+    * 위 코드는 `counter`의 값을 `inc`라는 상수에 넣어 접근라고 있으므로 정상적으로 동작한다. 아래 코드와 같이 Class로 `Wrapping`되어 동작하기 때문이다.
     ~~~kotlin
     class Ref<T>(var value: T)
     
@@ -111,8 +113,9 @@ class MainActivity {
         run {println(Inc)
     }
     ~~~
+    <br></br>
 
-    * 다음 코드는 결과값이 항상 0인 상태로 동작하게 된다. final 즉, 상수에 담아서 값을 그대로 가져오는 것이 아니기 때문에 함수가 끝나면서 `clicks`라는 변수는 다시 초기화 되게 된다.
+    * 다음 코드는 결과값이 항상 `0`인 상태로 동작하게 된다. `final` 즉, 상수에 담아서 값을 그대로 가져오는 것이 아니기 때문에 함수가 끝나면서 `clicks`라는 변수는 다시 초기화 되게 된다.
     ~~~kotlin
     fun clickCount(button: Button): Int {
         var clicks = 0
@@ -120,5 +123,6 @@ class MainActivity {
         println(clicks)
     }
     ~~~
-    <br><br>
+    
+<br></br>
  
