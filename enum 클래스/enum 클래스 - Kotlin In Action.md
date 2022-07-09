@@ -98,6 +98,4 @@ fun getOrder(color: Color): Int =
 
 
 
-
-
 <br></br>
